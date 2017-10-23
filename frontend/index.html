@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div>
+    This is FrontEnd Version 1
+    <br>
+  </div>
+<div id="demo">
+<h2>The XMLHttpRequest Object</h2>
+<button type="button" onclick="loadDoc()">Load Backend Data</button>
+</div>
+
+<script src="https://version-manager.cfapps.pez.pivotal.io/getbind.js"></script>
+<script>
+  function loadDoc(host) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "https://" + targethost + ".cfapps.pez.pivotal.io/data", true);
+  xhttp.send();
+}
+//  function loadPath() {
+//    var xhttp = new XMLHttpRequest();
+//    xhttp.onreadystatechange = function() {
+//    if (this.readyState == 4 && this.status == 200) {
+//      loadDoc(this.responseText)
+//    }
+//  };
+//  xhttp.open("GET", "https://" + "version-manager" + ".cfapps.pez.pivotal.io/getbind", true);
+//  xhttp.send();
+//  };
+//  
+// function loadDoc() {
+//  var xhttp = new XMLHttpRequest();
+//  xhttp.onreadystatechange = function() {
+//    if (this.readyState == 4 && this.status == 200) {
+//      document.getElementById("demo").innerHTML =
+//      this.responseText;
+//    }
+//  };
+//  xhttp.open("GET", "https://backend-v1.cfapps.pez.pivotal.io/data", true);
+//  xhttp.send();
+//}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+Flask
+werkzeug
+Flask-HTTPAuth
+flask-cors
+redis-collections
+Flask-Cache
