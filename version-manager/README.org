@@ -1,0 +1,20 @@
+* Usage
+** git clone
+** mkdir vendor
+** pip2 download -r requirements.txt -d vendor
+** cf push
+** cf create-service-broker
+** cf enable-service-access
+** cf marketplace
+** cf create-service
+** cf bind-service
+
+* Essentials of Service Broker
+** Service Broker API
+   https://github.com/openservicebrokerapi/servicebroker/blob/v2.12/spec.md
+** JSON RestFUL
+** authentication 
+** metadata
+** provision/deprovision
+** bind/unbind
+** dashboard
