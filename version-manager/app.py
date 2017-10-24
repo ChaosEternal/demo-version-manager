@@ -13,11 +13,11 @@ X_BROKER_API_VERSION = (2, 3)
 X_BROKER_API_VERSION_NAME = 'X-Broker-Api-Version'
 
 normal_plan = {
-          "id": "normal",
+          "id": "ffe18cc2-801f-4459-8c7d-0f67f51d3fa8",
           "name": "normal",
           "description": "A normal version manager." }
 # services
-vm_service = {'id': 'version_manager_service',
+vm_service = {'id': '0ad06619-1650-4a62-9d66-ef23b506d315',
                  'name': 'vms',
                  'description': 'A Version Manager Service',
                  'bindable': True,
